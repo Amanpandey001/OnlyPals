@@ -1,0 +1,33 @@
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+}   
+.ss{
+    width: 200px;
+    display: flex;
+    height: 10vh;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 30px;
+    column-gap: 10px;
+    background-color: rgba(190, 136, 221, 0.671);
+    box-shadow: 4px 4px 4px black;
+    transition: 0.2s;
+}
+a:hover{
+    color: rgb(59, 59, 59);
+}
+.ss:hover{
+    background-color: rgba(190, 136, 221, 0.849);
+
+}
+.ss img{
+    width: 50px;
+}

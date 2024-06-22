@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin: auto;
+}
+header{
+    background-color: rgb(151, 240, 240);
+    min-height: 14vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border: 1px solid black;
+}
+.symbol img{
+    width: 60px;
+    margin: 10px auto auto auto;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+    margin: 25px 0 0 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+    padding: 5px 10px;
+}
+li{
+    cursor: pointer;
+}
+a:hover{
+    color: gray;
+}
+select{
+    background-color: rgba(0, 0, 0, 0.226);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+}
+body{
+    background-color: rgb(156, 156, 236);
+}
+main{
+    margin: auto;
+    width: 90vw;
+    min-height: 100vh;
+    background-color:  rgb(149, 238, 149);
+    overflow-wrap: break-word;
+}
+main marquee{
+    font-size: 30px;
+    background-color: rgb(228, 121, 121);
+}
+main section{
+    margin: 10px;
+    line-height: 1.3;
+}
+footer{
+    background-color: rgb(17, 15, 15);
+    height: 30vh;
+    outline: 5px solid rgb(146, 106, 106);
+}
+footer section{
+    width: 90vw;
+    margin: auto;
+    outline: 2px solid black;
+    background-color: rgb(37, 37, 37);
+    height: 100%;
+    color: rgb(187, 180, 180);
+}
+h3{
+    position: relative;
+    top: 20px;
+    margin: 0 80px;
+    font-weight: lighter;
+}
+.foot{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 10px;
+    margin: 30px 10px;
+}
+.foo{
+    color: rgb(187, 180, 180);
+}
+.foo:hover{
+    color: rgba(126, 124, 124, 0.63);
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+}
+
+/*1100 ke niche width jaayega tab media query lagega*/
+@media screen and (max-width: 1100px) {
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 10px auto auto auto;
+        align-items: center;
+    }
+    footer{
+        background-color: rgb(17, 15, 15);
+        height: 30vh;
+        outline: 5px solid rgb(146, 106, 106);
+    }
+    footer section{
+        width: 90vw;
+        margin: auto;
+        outline: 2px solid black;
+        background-color: rgb(37, 37, 37);
+        height: 100%;
+        color: rgb(187, 180, 180);
+    }
+    h3{
+        position: relative;
+        top: 20px;
+        margin: 20px;
+        font-weight: lighter;
+    }
+    .foot{
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        gap: 10px;
+        margin: 30px 10px;
+    }
+    .foo{
+        color: rgb(187, 180, 180);
+    }
+    .foo:hover{
+        color: rgba(126, 124, 124, 0.63);
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+}
